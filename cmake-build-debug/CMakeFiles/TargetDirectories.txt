@@ -1,0 +1,3 @@
+/Users/ajlaliqbal/Documents/uni_project/Software_Engineering_Project/cmake-build-debug/CMakeFiles/Software_Engineering_Project.dir
+/Users/ajlaliqbal/Documents/uni_project/Software_Engineering_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ajlaliqbal/Documents/uni_project/Software_Engineering_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
