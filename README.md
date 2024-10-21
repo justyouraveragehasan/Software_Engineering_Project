@@ -1,2 +1,5 @@
 # Software_Engineering_Project
-project init
+
+We are making a tetris clone.
+
+Ayaan is a fat fuck
