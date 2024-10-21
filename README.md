@@ -2,4 +2,5 @@
 
 We are making a tetris clone.
 
-Ayaan is a fat fuck
+Ayaan is a very fat fuck
+Ajlal stinks
