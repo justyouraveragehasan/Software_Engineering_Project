@@ -8,7 +8,7 @@ class grid {
         const int rows; //18 in case needed not sure atp
         const int cols; //10
     public:
-        grid() : rows(18), cols(10) { grid_map[18][10] ={0};} 
+        grid() : rows(18), cols(10) { grid_map[18][10] = {0};} 
 };
 
 class game{
@@ -74,23 +74,23 @@ class game{
                     }
                 }
 
-                // Set render draw color (RGB + Alpha)
-                SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Black background
+            // Set render draw color (RGB + Alpha)
+            SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Black background
 
-                // Clear the screen
-                SDL_RenderClear(renderer);
+            // Clear the screen
+            SDL_RenderClear(renderer);
 
-                // Set render color (RGB + Alpha) for drawing (let's make it green)
-                SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+            // Set render color (RGB + Alpha) for drawing (let's make it green)
+            SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
 
-                // Draw a filled rectangle (just as an example)
-                SDL_Rect fillRect = { SCREEN_WIDTH / 4, SCREEN_HEIGHT / 4, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 };
-                SDL_RenderFillRect(renderer, &fillRect);
+            // Draw a filled rectangle (just as an example) order of startwidth,startheight,endwidth,endheight
+            SDL_Rect fillRect = { 0, SCREEN_HEIGHT-(180*3) , 100*3, 180*3 };
+            SDL_RenderFillRect(renderer, &fillRect);
 
-                // Update the screen
-                SDL_RenderPresent(renderer);
-            }
+            // Update the screen
+            SDL_RenderPresent(renderer);
         }
+    }
 };
 
 int main() {
