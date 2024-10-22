@@ -19,7 +19,7 @@ class game{
         const int SCREEN_HEIGHT;
     public:
         // Constructor
-        game() : SCREEN_WIDTH(800), SCREEN_HEIGHT(600), window(nullptr), renderer(nullptr) {
+        game() : SCREEN_WIDTH(1600), SCREEN_HEIGHT(900), window(nullptr), renderer(nullptr) {
             // Initialize SDL
             if (SDL_Init(SDL_INIT_VIDEO) < 0) {
                 cerr << "SDL could not initialize! SDL_Error: " << SDL_GetError() << endl;
@@ -84,7 +84,7 @@ class game{
             SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
 
             // Draw a filled rectangle (just as an example) order of startwidth,startheight,endwidth,endheight
-            SDL_Rect fillRect = { 0, SCREEN_HEIGHT-(180*3) , 100*3, 180*3 };
+            SDL_Rect fillRect = { 0, 0 , 100*5, 180*5 };
             SDL_RenderFillRect(renderer, &fillRect);
 
             // Update the screen
