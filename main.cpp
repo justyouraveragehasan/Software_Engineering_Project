@@ -2,6 +2,14 @@
 #include <SDL2/SDL.h>
 using namespace std;
 
+class grid {
+    private:
+        int grid_map[18][10];
+        const int rows; //18 in case needed not sure atp
+        const int cols; //10
+    public:
+        grid() : rows(18), cols(10) { grid_map[18][10] ={0};} 
+};
 
 class game{
     private:
@@ -39,8 +47,6 @@ class game{
                 exit(1);  // Exit the program if renderer creation failed
             }
 
-            // Set render draw color (RGB + Alpha)
-            SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Black background
         }
 
         // Destructor to clean up resources
@@ -68,6 +74,9 @@ class game{
                     }
                 }
 
+                // Set render draw color (RGB + Alpha)
+                SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Black background
+
                 // Clear the screen
                 SDL_RenderClear(renderer);
 
@@ -87,6 +96,5 @@ class game{
 int main() {
     game test;
     test.mainloop();
-    cout << "Hello, World!" << endl;
     return 0;
 }
